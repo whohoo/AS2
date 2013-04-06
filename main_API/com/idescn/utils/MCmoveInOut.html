@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.idescn.utils.MCmoveInOut - whohoo AS2 documents</title><script src="../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../index-files";
+//--></script><link href="../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.idescn.utils" rel="up"/><link href="../../../com/idescn/utils/MCskew.html" title="Class com.idescn.utils.MCskew" rel="prev"/><link href="../../../com/idescn/utils/MCcolorMatrix.html" title="Class com.idescn.utils.MCcolorMatrix" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.idescn.utils.MCmoveInOut</h1><div class="type_hierachy"><ul><li><strong>com.idescn.utils.MCmoveInOut</strong></li></ul></div><div class="type_description"><h2>Description</h2><p>
+  make a movieclip playing to end frame by frame, or playing to frist frame by
+  frame. <br>
+  <p></p>
+  there are only one method(initialize()) you must write, if you would like<br> 
+  MovieClip.moveIn() or MovieClip.moveOut() methods. 
+ <pre>
+ <b>eg:</b>
+ com.idescn.utils.MCmoveInOut.initialize();//make all movieclip.
+ //or
+ com.idescn.utils.MCmoveInOut.initialize(target_mc);//only target_mc.
+ 
+	//target_mc.stop();
+ target_mc.onPress=function(){
+	this.moveIn(null, doFunc);//by onEnterFrame
+	this.moveIn2(null, doFunc);//by interval time
+ }
+
+ target_mc.onRelease=function(){
+	this.moveOut(null, doFunc);//by onEnterFrame
+	this.moveOut2(null, doFunc);//by interval time
+ }
+
+ function doFunc(target:MovieClip):Void{
+	trace(target._currentframe);
+ }
+ </pre>
+ 
+ </p></div><div class="type_indexes"><div class="method_index"><h2>Method Index</h2><a href="#initialize" title="static public function initialize(target:MovieClip):Boolean">initialize()</a>, <a href="#moveIn" title="public function moveIn(frame:Number, func:Function):Void">moveIn()</a>, <a href="#moveIn2" title="public function moveIn2(frame:Number, func:Function):Void">moveIn2()</a>, <a href="#moveOut" title="public function moveOut(frame:Number, func:Function):Void">moveOut()</a>, <a href="#moveOut2" title="public function moveOut2(frame:Number, func:Function):Void">moveOut2()</a></div></div><div class="type_details"><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="initialize"></a><h3>initialize</h3><code class="method_synopsis">static public function <strong class="method_name">initialize</strong>(target:<span class="unresolved_type_name">MovieClip</span>):<span class="unresolved_type_name">Boolean</span></code><div class="method_info"><p>
+ initiallize target(movieclip), make target had tow methods(moveIn,moveOut)<br></br>
+ if not point out which movieclip you wannna, it would make all movieclips<br></br>
+ had those methods
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>target</code></td><td>if not movieclip or not undefined, it would regist <br></br>
+ 		MovieClip.prototype, that means all movieclip would had those <br></br>
+ 		methods.
+ </td></tr></table><h4>Return</h4><p class="extra_info"> 
+	 </p></div></div><div class="method_details"><a name="moveIn"></a><h3>moveIn</h3><code class="method_synopsis">public function <strong class="method_name">moveIn</strong>(frame:<span class="unresolved_type_name">Number</span>, func:<span class="unresolved_type_name">Function</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ make a MovieClip playing untile end if not point param frame.<br></br>
+ if you point a frame, and frame large then currentFrame,<br></br>
+ this movieclip would not play, or it would stop.<br></br>
+ 
+ <pre>
+ 	<b>eg:</b>
+ 		car_mc is a movieclip.
+ 		car_mc.moveIn();// it would play end
+ 		car_mc.moveIn(4);// it would play to frame 4.
+ 		car_mc.moveIn(null,doFunc);// it would play end and trigger function
+ 		    //doFunc(target_mc);
+ </pre>
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>frame</code></td><td>[optional parameters]<br></br>
+ 		the default frame is last frame(_totalFramess), if not point.
+ </td></tr><tr><td><code>func</code></td><td>[optional parameters]<br></br>
+		a function, when this movieclip gotopaly the frame,<br></br>
+ 		the func would be trigger, and pass this movieclip to the parameter.
+	 </td></tr></table></div></div><div class="method_details alt_row"><a name="moveOut"></a><h3>moveOut</h3><code class="method_synopsis">public function <strong class="method_name">moveOut</strong>(frame:<span class="unresolved_type_name">Number</span>, func:<span class="unresolved_type_name">Function</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ make a MovieClip playing untile first if not point param frame.<br></br>
+ if you point a frame, and frame less then currentFrame,<br></br>
+ this movieclip would not play, or it would stop.<br></br>
+ 
+ <pre>
+ <b>eg:</b>
+ 		car_mc is a movieclip.
+ 		car_mc.moveOut();// it would play end
+ 		car_mc.moveOut(4);// it would play to frame 4.
+ 		car_mc.moveOut(null,doFunc);// it would play end and trigger function
+ 		   //doFunc(target_mc);
+ </pre>
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>frame</code></td><td>[optional parameters]<br></br>
+ 		the default frame is first frame(1), if not point.
+ </td></tr><tr><td><code>func</code></td><td>[optional parameters]<br></br>
+		a function, when this movieclip gotopaly the frame,<br></br>
+ 		the func would be trigger, and pass this movieclip to the parameter.
+	 </td></tr></table></div></div><div class="method_details"><a name="moveIn2"></a><h3>moveIn2</h3><code class="method_synopsis">public function <strong class="method_name">moveIn2</strong>(frame:<span class="unresolved_type_name">Number</span>, func:<span class="unresolved_type_name">Function</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ make a MovieClip playing untile end if not point param frame.<br></br>
+ if you point a frame, and frame large then currentFrame,<br></br>
+ this movieclip would not play, or it would stop.<br></br>
+ <b>NOTE: </b>
+ this function different from moveIn, it play movieclip by time, moveIn play <br/>
+ movieclip by frame, the interval time is 30/1000 second. you can't redefined the<br/>
+ value.<br/>
+ <pre>
+ 	<b>eg:</b>
+ 		car_mc is a movieclip.
+ 		car_mc.moveIn2();// it would play end
+ 		car_mc.moveIn2(4);// it would play to frame 4.
+ 		car_mc.moveIn2(null,doFunc);// it would play end and trigger function
+ 		    //doFunc(target_mc);
+ </pre>
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>frame</code></td><td>[optional parameters]<br></br>
+ 		the default frame is last frame(_totalFramess), if not point.
+ </td></tr><tr><td><code>func</code></td><td>[optional parameters]<br></br>
+		a function, when this movieclip gotopaly the frame,<br></br>
+ 		the func would be trigger, and pass this movieclip to the parameter.
+	 </td></tr></table></div></div><div class="method_details alt_row"><a name="moveOut2"></a><h3>moveOut2</h3><code class="method_synopsis">public function <strong class="method_name">moveOut2</strong>(frame:<span class="unresolved_type_name">Number</span>, func:<span class="unresolved_type_name">Function</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ make a MovieClip playing untile first if not point param frame.<br></br>
+ if you point a frame, and frame less then currentFrame,<br></br>
+ this movieclip would not play, or it would stop.<br></br>
+ <b>NOTE: </b>
+ this function different from moveIn, it play movieclip by time, moveIn play <br/>
+ movieclip by frame, the interval time is 30/1000 second. you can't redefined the<br/>
+ value.<br/>
+ <pre>
+ <b>eg:</b>
+ 		car_mc is a movieclip.
+ 		car_mc.moveOut2();// it would play end
+ 		car_mc.moveOut2(4);// it would play to frame 4.
+ 		car_mc.moveOut2(null,doFunc);// it would play end and trigger function
+ 		   //doFunc(target_mc);
+ </pre>
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>frame</code></td><td>[optional parameters]<br></br>
+ 		the default frame is first frame(1), if not point.
+ </td></tr><tr><td><code>func</code></td><td>[optional parameters]<br></br>
+		a function, when this movieclip gotopaly the frame,<br></br>
+ 		the func would be trigger, and pass this movieclip to the parameter.
+	 </td></tr></table></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.idescn.utils" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

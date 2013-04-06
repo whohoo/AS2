@@ -1,0 +1,10 @@
+strict digraph interface_diagram {
+  rankdir=LR;
+  ScrollFactory[
+    label="ScrollFactory",
+    URL="ScrollFactory.html",
+    tooltip="com.idescn.utils.scroll.ScrollFactory",
+    fontname="Times-Italic",
+    shape="record"
+  ];
+}

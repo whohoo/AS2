@@ -1,0 +1,21 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  SoundBar[
+    label="SoundBar",
+    URL="SoundBar.html",
+    tooltip="com.idescn.sound.SoundBar",
+    shape="record"
+  ];
+  MusicBox[
+    label="MusicBox",
+    URL="MusicBox.html",
+    tooltip="com.idescn.sound.MusicBox",
+    shape="record"
+  ];
+  ExSound[
+    label="ExSound",
+    URL="ExSound.html",
+    tooltip="com.idescn.sound.ExSound",
+    shape="record"
+  ];
+}

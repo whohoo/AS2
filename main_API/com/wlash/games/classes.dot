@@ -1,0 +1,9 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  ForkliftEngine[
+    label="ForkliftEngine",
+    URL="ForkliftEngine.html",
+    tooltip="com.wlash.games.ForkliftEngine",
+    shape="record"
+  ];
+}

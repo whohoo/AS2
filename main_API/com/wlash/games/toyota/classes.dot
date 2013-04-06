@@ -1,0 +1,33 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  SpecialEvents[
+    label="SpecialEvents",
+    URL="SpecialEvents.html",
+    tooltip="com.wlash.games.toyota.SpecialEvents",
+    shape="record"
+  ];
+  GameSounds[
+    label="GameSounds",
+    URL="GameSounds.html",
+    tooltip="com.wlash.games.toyota.GameSounds",
+    shape="record"
+  ];
+  ForkliftSet[
+    label="ForkliftSet",
+    URL="ForkliftSet.html",
+    tooltip="com.wlash.games.toyota.ForkliftSet",
+    shape="record"
+  ];
+  ForkliftGameSystem[
+    label="ForkliftGameSystem",
+    URL="ForkliftGameSystem.html",
+    tooltip="com.wlash.games.toyota.ForkliftGameSystem",
+    shape="record"
+  ];
+  Forklift[
+    label="Forklift",
+    URL="Forklift.html",
+    tooltip="com.wlash.games.toyota.Forklift",
+    shape="record"
+  ];
+}

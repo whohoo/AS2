@@ -1,0 +1,9 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  Datetime[
+    label="Datetime",
+    URL="Datetime.html",
+    tooltip="com.idescn.Datetime",
+    shape="record"
+  ];
+}

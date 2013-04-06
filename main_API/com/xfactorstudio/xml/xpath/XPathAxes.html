@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.xfactorstudio.xml.xpath.XPathAxes - whohoo AS2 documents</title><script src="../../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../../index-files";
+//--></script><link href="../../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.xfactorstudio.xml.xpath" rel="up"/><link href="../../../../com/xfactorstudio/xml/xpath/XPathAxisNames.html" title="Class com.xfactorstudio.xml.xpath.XPathAxisNames" rel="prev"/><link href="../../../../com/xfactorstudio/xml/xpath/XPath2Functions.html" title="Class com.xfactorstudio.xml.xpath.XPath2Functions" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.xfactorstudio.xml.xpath.XPathAxes</h1><div class="type_hierachy"><ul><li><strong>com.xfactorstudio.xml.xpath.XPathAxes</strong></li></ul></div><div class="type_description"></div><div class="type_indexes"><div class="method_index"><h2>Method Index</h2><a href="#ancestor" title="static function ancestor(contextNode:XMLNode):Array">ancestor()</a>, <a href="#ancestorOrSelf" title="static function ancestorOrSelf(contextNode:XMLNode):Array">ancestorOrSelf()</a>, <a href="#attribute" title="static function attribute(contextNode:XMLNode):Array">attribute()</a>, <a href="#child" title="static function child(contextNode:XMLNode):Array">child()</a>, <a href="#descendant" title="static function descendant(contextNode:XMLNode):Array">descendant()</a>, <a href="#descendantOrSelf" title="static function descendantOrSelf(contextNode:XMLNode):Array">descendantOrSelf()</a>, <a href="#following" title="static function following(contextNode:XMLNode):Array">following()</a>, <a href="#followingSibling" title="static function followingSibling(contextNode:XMLNode):Array">followingSibling()</a>, <a href="#namespace" title="static function namespace(contextNode:XMLNode):Array">namespace()</a>, <a href="#parent" title="static function parent(contextNode:XMLNode):Array">parent()</a>, <a href="#preceding" title="static function preceding(contextNode:XMLNode):Array">preceding()</a>, <a href="#precedingSibling" title="static function precedingSibling(contextNode:XMLNode):Array">precedingSibling()</a>, <a href="#root" title="static function root(contextNode:XMLNode):Array">root()</a>, <a href="#self" title="static function self(contextNode:XMLNode):Array">self()</a>, <a href="#stringValue" title="static function stringValue(contextNode:XMLNode):Array">stringValue()</a></div></div><div class="type_details"><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="ancestor"></a><h3>ancestor</h3><code class="method_synopsis">static function <strong class="method_name">ancestor</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 ancestor
+	
+		 the ancestor axis contains the ancestors 
+		 of the context node; the ancestors of the 
+		 context node consist of the parent of 
+		 context node and the parent's parent and 
+		 so on; thus, the ancestor axis will always 
+		 include the root node, unless the context 
+		 node is the root node
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details"><a name="namespace"></a><h3>namespace</h3><code class="method_synopsis">static function <strong class="method_name">namespace</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 namespace
+	
+		 the namespace axis contains the namespace nodes 
+		 of the context node; the axis will be empty 
+		 unless the context node is an element
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details alt_row"><a name="ancestorOrSelf"></a><h3>ancestorOrSelf</h3><code class="method_synopsis">static function <strong class="method_name">ancestorOrSelf</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 ancestorOrSelf
+	
+		 the ancestor-or-self axis contains the 
+		 context node and the ancestors of the 
+		 context node; thus, the ancestor axis 
+		 will always include the root node
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details"><a name="attribute"></a><h3>attribute</h3><code class="method_synopsis">static function <strong class="method_name">attribute</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 attribute
+	
+		 the attribute axis contains the attributes 
+		 of the context node; the axis will be 
+		 empty unless the context node is an element
+		 
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details alt_row"><a name="child"></a><h3>child</h3><code class="method_synopsis">static function <strong class="method_name">child</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 child
+		 
+		 the child axis contains the children of 
+		 the context node
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details"><a name="stringValue"></a><h3>stringValue</h3><code class="method_synopsis">static function <strong class="method_name">stringValue</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 text
+	
+		TODO:This needs to be renamed stringValue. It returns the string value 
+		of a node. The string value is not the same a the DOM nodeValue. For 
+		elements, the string value is the concatanation of all decendent nodes 
+		string values. For attributes, the string value is the value of the 
+		attribute. For namespace nodes, the string value is the URL bound to 
+		the namespace, basically the same as for an attribute, but it is also 
+		supposed to resolve relative URLs. 	 
+		 
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details alt_row"><a name="descendant"></a><h3>descendant</h3><code class="method_synopsis">static function <strong class="method_name">descendant</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 descendant
+	
+		 the descendant axis contains the descendants 
+		 of the context node; a descendant is a child 
+		 or a child of a child and so on; thus the 
+		 descendant axis never contains attribute or 
+		 namespace nodes
+		 
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details"><a name="descendantOrSelf"></a><h3>descendantOrSelf</h3><code class="method_synopsis">static function <strong class="method_name">descendantOrSelf</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 descendantOrSelf
+	
+		 the ancestor-or-self axis contains the context 
+		 node and the ancestors of the context node; 
+		 thus, the ancestor axis will always include 
+		 the root node
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details alt_row"><a name="following"></a><h3>following</h3><code class="method_synopsis">static function <strong class="method_name">following</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 following
+	
+		 the following axis contains all nodes in 
+		 the same document as the context node 
+		 that are after the context node in 
+		 document order, excluding any descendants 
+		 and excluding attribute nodes and 
+		 namespace nodes
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details"><a name="followingSibling"></a><h3>followingSibling</h3><code class="method_synopsis">static function <strong class="method_name">followingSibling</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 followingSibling
+	
+		 the following-sibling axis contains all the 
+		 following siblings of the context node; if 
+		 the context node is an attribute node or 
+		 namespace node, the following-sibling axis 
+		 is empty
+	
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details alt_row"><a name="parent"></a><h3>parent</h3><code class="method_synopsis">static function <strong class="method_name">parent</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 parent
+	
+		 the parent axis contains the parent of 
+		 the context node, if there is one
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details"><a name="preceding"></a><h3>preceding</h3><code class="method_synopsis">static function <strong class="method_name">preceding</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 preceding
+	
+		 the preceding axis contains all nodes in the 
+		 same document as the context node that are 
+		 before the context node in document order, 
+		 excluding any ancestors and excluding 
+		 attribute nodes and namespace nodes
+	
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details alt_row"><a name="precedingSibling"></a><h3>precedingSibling</h3><code class="method_synopsis">static function <strong class="method_name">precedingSibling</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 precedingSibling
+	
+		 the preceding-sibling axis contains all the preceding 
+		 siblings of the context node; if the context node 
+		 is an attribute node or namespace node, the 
+		 preceding-sibling axis is empty
+	
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details"><a name="self"></a><h3>self</h3><code class="method_synopsis">static function <strong class="method_name">self</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 self
+	
+		 the self axis contains just the context 
+		 node itself
+	
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div><div class="method_details alt_row"><a name="root"></a><h3>root</h3><code class="method_synopsis">static function <strong class="method_name">root</strong>(contextNode:<span class="unresolved_type_name">XMLNode</span>):<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+		 root
+	
+		 This is not officially an axis, but is used internally 
+		 to return an "axis" proxy for the XML document array 
+		 containing one element, the first node in the XML 
+		 document.
+		 
+		 @param (XMLNode)contextNode 
+		 @return (Array) and array containing 
+				matching nodes in document order
+</p></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.xfactorstudio.xml.xpath" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

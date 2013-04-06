@@ -1,0 +1,9 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  Vector3D[
+    label="Vector3D",
+    URL="Vector3D.html",
+    tooltip="com.idescn.as3d.Vector3D",
+    shape="record"
+  ];
+}

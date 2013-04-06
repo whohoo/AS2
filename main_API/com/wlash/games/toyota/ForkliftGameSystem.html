@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.wlash.games.toyota.ForkliftGameSystem - whohoo AS2 documents</title><script src="../../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../../index-files";
+//--></script><link href="../../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.wlash.games.toyota" rel="up"/><link href="../../../../com/wlash/games/toyota/ForkliftSet.html" title="Class com.wlash.games.toyota.ForkliftSet" rel="prev"/><link href="../../../../com/wlash/games/toyota/Forklift.html" title="Class com.wlash.games.toyota.Forklift" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.wlash.games.toyota.ForkliftGameSystem</h1><div class="type_hierachy"><ul><li><strong>com.wlash.games.toyota.ForkliftGameSystem</strong></li></ul></div><div class="type_description"><h2>Description</h2><p>
+ system of 3 forklifts game.<p></p>
+ 
+ <b>EventDispatcher</b>
+ <ul>
+ <li>onLiftState({forklift, state}):</li>
+ <li>onStopGame({winNum}):</li>
+ <li>onPosition({level})</li>
+ </ul>
+ </p></div><div class="type_indexes"><div class="field_index"><h2>Field Index</h2><a href="#addEventListener" title="public addEventListener:Function">addEventListener</a>, <a href="#removeEventListener" title="public removeEventListener:Function">removeEventListener</a></div><div class="method_index"><h2>Method Index</h2><div><code>new <a href="#ForkliftGameSystem" title="public function ForkliftGameSystem(target:MovieClip)">ForkliftGameSystem()</a></code></div><a href="#addForklift" title="public function addForklift(forklift:Forklift):Void">addForklift()</a>, <a href="#output" title="static public function output(str:String):Void">output()</a>, <a href="#resetGame" title="public function resetGame():Void">resetGame()</a>, <a href="#startGame" title="public function startGame():Void">startGame()</a>, <a href="#stopGame" title="public function stopGame():Void">stopGame()</a>, <a href="#toString" title="public function toString():String">toString()</a></div></div><div class="type_details"><div class="constructor_detail_list"><h2>Constructor Detail</h2><div class="method_details"><a name="ForkliftGameSystem"></a><h3>ForkliftGameSystem</h3><code class="method_synopsis">public function <strong class="method_name">ForkliftGameSystem</strong>(target:<span class="unresolved_type_name">MovieClip</span>)</code><div class="method_info"><p>
+ construction function.<br></br>
+ create a class BY [new ForkliftGameSystem(this);]
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>target</code></td><td>target a movie clip
+	 </td></tr></table></div></div></div><div class="field_detail_list"><h2>Field Detail</h2><a name="addEventListener"></a><h3>addEventListener</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">addEventListener</strong>:<span class="unresolved_type_name">Function</span></code><div class="field_info">
+ <b>In fact</b>, addEventListener(event:String, handler) is method.<br>
+ add a listener for a particular event<br>
+ parameters event the name of the event ("click", "change", etc)<br>
+ parameters handler the function or object that should be called
+	</div></div><a name="removeEventListener"></a><h3>removeEventListener</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">removeEventListener</strong>:<span class="unresolved_type_name">Function</span></code><div class="field_info">
+ <b>In fact</b>, removeEventListener(event:String, handler) is method.<br>
+ remove a listener for a particular event<br>
+ parameters event the name of the event ("click", "change", etc)<br>
+ parameters handler the function or object that should be called
+	</div></div></div><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="addForklift"></a><h3>addForklift</h3><code class="method_synopsis">public function <strong class="method_name">addForklift</strong>(forklift:<a href="../../../../com/wlash/games/toyota/Forklift.html" class="class_name" title="Class com.wlash.games.toyota.Forklift">Forklift</a>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ put forklift to this
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>forklift</code></td><td></td></tr></table></div></div><div class="method_details"><a name="startGame"></a><h3>startGame</h3><code class="method_synopsis">public function <strong class="method_name">startGame</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ the game start.
+	 </p></div></div><div class="method_details alt_row"><a name="stopGame"></a><h3>stopGame</h3><code class="method_synopsis">public function <strong class="method_name">stopGame</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ end this game.
+	 </p></div></div><div class="method_details"><a name="resetGame"></a><h3>resetGame</h3><code class="method_synopsis">public function <strong class="method_name">resetGame</strong>():<span class="void_name">Void</span></code><div class="method_info"></div></div><div class="method_details alt_row"><a name="toString"></a><h3>toString</h3><code class="method_synopsis">public function <strong class="method_name">toString</strong>():<span class="unresolved_type_name">String</span></code><div class="method_info"><p>
+ show class name
+ </p><h4>Return</h4><p class="extra_info"> class name
+	 </p></div></div><div class="method_details"><a name="output"></a><h3>output</h3><code class="method_synopsis">static public function <strong class="method_name">output</strong>(str:<span class="unresolved_type_name">String</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ debug output
+	 </p></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.wlash.games.toyota" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

@@ -1,0 +1,79 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  QueryPart[
+    label="QueryPart",
+    URL="QueryPart.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.QueryPart",
+    shape="record"
+  ];
+  Query[
+    label="Query",
+    URL="Query.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Query",
+    shape="record"
+  ];
+  Predicate[
+    label="Predicate",
+    URL="Predicate.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Predicate",
+    shape="record"
+  ];
+  Path[
+    label="Path",
+    URL="Path.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Path",
+    shape="record"
+  ];
+  Operator[
+    label="Operator",
+    URL="Operator.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Operator",
+    shape="record"
+  ];
+  Num[
+    label="Num",
+    URL="Num.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Num",
+    shape="record"
+  ];
+  Litteral[
+    label="Litteral",
+    URL="Litteral.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Litteral",
+    shape="record"
+  ];
+  Identifier[
+    label="Identifier",
+    URL="Identifier.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Identifier",
+    shape="record"
+  ];
+  Group[
+    label="Group",
+    URL="Group.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Group",
+    shape="record"
+  ];
+  Func[
+    label="Func",
+    URL="Func.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Func",
+    shape="record"
+  ];
+  Axis[
+    label="Axis",
+    URL="Axis.html",
+    tooltip="com.xfactorstudio.xml.xpath.types.Axis",
+    shape="record"
+  ];
+  QueryPart -> Query;
+  QueryPart -> Predicate;
+  QueryPart -> Path;
+  QueryPart -> Operator;
+  QueryPart -> Num;
+  QueryPart -> Litteral;
+  QueryPart -> Identifier;
+  QueryPart -> Group;
+  QueryPart -> Func;
+  QueryPart -> Axis;
+}

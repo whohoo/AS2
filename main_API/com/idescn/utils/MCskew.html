@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.idescn.utils.MCskew - whohoo AS2 documents</title><script src="../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../index-files";
+//--></script><link href="../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.idescn.utils" rel="up"/><link href="../../../com/idescn/utils/MCskew2.html" title="Class com.idescn.utils.MCskew2" rel="prev"/><link href="../../../com/idescn/utils/MCmoveInOut.html" title="Class com.idescn.utils.MCmoveInOut" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.idescn.utils.MCskew</h1><div class="type_hierachy"><ul><li><strong>com.idescn.utils.MCskew</strong></li></ul></div><div class="type_description"><h2>Description</h2><p>
+  a simple method to skewing movieclip. <br>
+  <p></p>
+  there are only one method(initialize()) you must write, if you would like.<br> 
+  <b>NOTE: this method only for flash8 and heighter</b>
+ <pre>
+ <b>eg:</b>
+ com.idescn.utils.MCskew.initialize();//make all movieclip.
+ //or
+ com.idescn.utils.MCskew.initialize(target_mc);//only target_mc.
+ 
+  target_mc._skewX = 30;
+  target_mc._skewY = -10;
+  target_mc.setSkew(-40,45);
+ </pre>
+ 
+ </p></div><div class="type_indexes"><div class="field_index"><h2>Field Index</h2><a href="#_skewX" title="public _skewX:Number">_skewX</a>, <a href="#_skewY" title="public _skewY:Number">_skewY</a></div><div class="method_index"><h2>Method Index</h2><a href="#getSkew" title="public function getSkew():Array">getSkew()</a>, <a href="#initialize" title="static public function initialize(target:MovieClip):Boolean">initialize()</a>, <a href="#setSkew" title="public function setSkew(skewX:Number, skewY:Number):Void">setSkew()</a></div></div><div class="type_details"><div class="field_detail_list"><h2>Field Detail</h2><a name="_skewX"></a><h3>_skewX</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">_skewX</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">
+ this member would be added to movieclip, if MCskew.initialize().<br></br>
+ skew X of movieclip.
+	 </div></div><a name="_skewY"></a><h3>_skewY</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">_skewY</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">
+ this member would be added to movieclip, if MCskew.initialize().<br></br>
+ skew Y of movieclip.
+	 </div></div></div><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="initialize"></a><h3>initialize</h3><code class="method_synopsis">static public function <strong class="method_name">initialize</strong>(target:<span class="unresolved_type_name">MovieClip</span>):<span class="unresolved_type_name">Boolean</span></code><div class="method_info"><p>
+ initiallize target(movieclip), make target had tow members(skewX,skewY)<br></br>
+ if not point out which movieclip you wannna, it would make all movieclips<br></br>
+ had those methods.<br></br>
+ <b>NOTE: this method only for flash8 and heighter</b>
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>target</code></td><td>if not movieclip or not undefined, it would regist <br></br>
+ 		MovieClip.prototype, that means all movieclip would had those <br></br>
+ 		methods.
+ </td></tr></table><h4>Return</h4><p class="extra_info"> 
+	 </p></div></div><div class="method_details"><a name="setSkew"></a><h3>setSkew</h3><code class="method_synopsis">public function <strong class="method_name">setSkew</strong>(skewX:<span class="unresolved_type_name">Number</span>, skewY:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ set movieclip skew.<br></br>
+ <b>NOTE:this method is only for flash8 and highter.</b>
+ <pre>
+ 	<b>eg:</b>
+ 	 target.setSkew(30);
+   target.setSkew(null, 20);
+   target.setSkew(40,-20);
+ </pre>
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>skewX</code></td><td>a angle domain -180 to 180. if did not point out, movieclip
+ 		would not change skewX.
+ </td></tr><tr><td><code>skewY</code></td><td>a angle domain -180 to 180. if did not point out, movieclip
+ 		would not change skewY.
+	 </td></tr></table></div></div><div class="method_details alt_row"><a name="getSkew"></a><h3>getSkew</h3><code class="method_synopsis">public function <strong class="method_name">getSkew</strong>():<span class="unresolved_type_name">Array</span></code><div class="method_info"><p>
+ get the movieclip skew value,<br></br>
+ <b>NOTE: this method only for flash8 and highter.</b>
+ <pre>
+ <b>eg:</b>
+  var skew:Array = target.getSkew();
+  var skewX:Number = skew[0];
+  var skewY:Number = skew[1];
+ </pre>
+ 
+ </p><h4>Return</h4><p class="extra_info"> a array. the first of array is skewX, the sceond of array is skewY.
+	 </p></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.idescn.utils" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

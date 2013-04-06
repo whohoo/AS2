@@ -1,0 +1,13 @@
+<map id="class_diagram" name="class_diagram">
+<area shape="rect" href="QueryPart.html" title="com.xfactorstudio.xml.xpath.types.QueryPart" alt="" coords="7,330,103,378" />
+<area shape="rect" href="Query.html" title="com.xfactorstudio.xml.xpath.types.Query" alt="" coords="163,6,235,54" />
+<area shape="rect" href="Predicate.html" title="com.xfactorstudio.xml.xpath.types.Predicate" alt="" coords="154,78,244,126" />
+<area shape="rect" href="Path.html" title="com.xfactorstudio.xml.xpath.types.Path" alt="" coords="163,150,235,198" />
+<area shape="rect" href="Operator.html" title="com.xfactorstudio.xml.xpath.types.Operator" alt="" coords="155,222,243,270" />
+<area shape="rect" href="Num.html" title="com.xfactorstudio.xml.xpath.types.Num" alt="" coords="163,294,235,342" />
+<area shape="rect" href="Litteral.html" title="com.xfactorstudio.xml.xpath.types.Litteral" alt="" coords="160,366,238,414" />
+<area shape="rect" href="Identifier.html" title="com.xfactorstudio.xml.xpath.types.Identifier" alt="" coords="155,438,243,486" />
+<area shape="rect" href="Group.html" title="com.xfactorstudio.xml.xpath.types.Group" alt="" coords="163,510,235,558" />
+<area shape="rect" href="Func.html" title="com.xfactorstudio.xml.xpath.types.Func" alt="" coords="163,582,235,630" />
+<area shape="rect" href="Axis.html" title="com.xfactorstudio.xml.xpath.types.Axis" alt="" coords="163,654,235,702" />
+</map>

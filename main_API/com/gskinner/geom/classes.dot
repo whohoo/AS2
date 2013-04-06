@@ -1,0 +1,9 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  ColorMatrix[
+    label="ColorMatrix",
+    URL="ColorMatrix.html",
+    tooltip="com.gskinner.geom.ColorMatrix",
+    shape="record"
+  ];
+}

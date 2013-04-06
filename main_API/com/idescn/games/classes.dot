@@ -1,0 +1,15 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  VehicleEngine[
+    label="VehicleEngine",
+    URL="VehicleEngine.html",
+    tooltip="com.idescn.games.VehicleEngine",
+    shape="record"
+  ];
+  PlayingCard[
+    label="PlayingCard",
+    URL="PlayingCard.html",
+    tooltip="com.idescn.games.PlayingCard",
+    shape="record"
+  ];
+}

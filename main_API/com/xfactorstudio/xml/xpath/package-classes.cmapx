@@ -1,0 +1,17 @@
+<map id="class_diagram" name="class_diagram">
+<area shape="rect" href="XPathUtils.html" title="com.xfactorstudio.xml.xpath.XPathUtils" alt="" coords="56,1014,160,1062" />
+<area shape="rect" href="XPathPredicateOperator.html" title="com.xfactorstudio.xml.xpath.XPathPredicateOperator" alt="" coords="7,942,209,990" />
+<area shape="rect" href="XPathLexer.html" title="com.xfactorstudio.xml.xpath.XPathLexer" alt="" coords="52,870,164,918" />
+<area shape="rect" href="XPathFunctions.html" title="com.xfactorstudio.xml.xpath.XPathFunctions" alt="" coords="37,798,179,846" />
+<area shape="rect" href="XPathFunctionNames.html" title="com.xfactorstudio.xml.xpath.XPathFunctionNames" alt="" coords="16,726,200,774" />
+<area shape="rect" href="XPathAxisNames.html" title="com.xfactorstudio.xml.xpath.XPathAxisNames" alt="" coords="31,654,185,702" />
+<area shape="rect" href="XPathAxes.html" title="com.xfactorstudio.xml.xpath.XPathAxes" alt="" coords="55,582,161,630" />
+<area shape="rect" href="XPath2Functions.html" title="com.xfactorstudio.xml.xpath.XPath2Functions" alt="" coords="33,510,183,558" />
+<area shape="rect" href="XPath.html" title="com.xfactorstudio.xml.xpath.XPath" alt="" coords="72,438,144,486" />
+<area shape="rect" href="XmlNodeSet.html" title="com.xfactorstudio.xml.xpath.XmlNodeSet" alt="" coords="48,366,168,414" />
+<area shape="rect" href="TokenTypes.html" title="com.xfactorstudio.xml.xpath.TokenTypes" alt="" coords="52,294,164,342" />
+<area shape="rect" href="Tokenizer.html" title="com.xfactorstudio.xml.xpath.Tokenizer" alt="" coords="60,222,156,270" />
+<area shape="rect" href="Token.html" title="com.xfactorstudio.xml.xpath.Token" alt="" coords="72,150,144,198" />
+<area shape="rect" href="Operators.html" title="com.xfactorstudio.xml.xpath.Operators" alt="" coords="60,78,156,126" />
+<area shape="rect" href="Axes.html" title="com.xfactorstudio.xml.xpath.Axes" alt="" coords="72,6,144,54" />
+</map>

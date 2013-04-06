@@ -1,0 +1,15 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  Strip3Dmap[
+    label="Strip3Dmap",
+    URL="Strip3Dmap.html",
+    tooltip="com.idescn.effects.Strip3Dmap",
+    shape="record"
+  ];
+  FlipPagesBox[
+    label="FlipPagesBox",
+    URL="FlipPagesBox.html",
+    tooltip="com.idescn.effects.FlipPagesBox",
+    shape="record"
+  ];
+}

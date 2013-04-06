@@ -1,0 +1,15 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  Matrix[
+    label="Matrix",
+    URL="Matrix.html",
+    tooltip="com.wlash.utils.Matrix",
+    shape="record"
+  ];
+  AddFlashPlatformInfo[
+    label="AddFlashPlatformInfo",
+    URL="AddFlashPlatformInfo.html",
+    tooltip="com.wlash.utils.AddFlashPlatformInfo",
+    shape="record"
+  ];
+}

@@ -1,0 +1,15 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  Shape[
+    label="Shape",
+    URL="Shape.html",
+    tooltip="com.idescn.draw.Shape",
+    shape="record"
+  ];
+  ExShape[
+    label="ExShape",
+    URL="ExShape.html",
+    tooltip="com.idescn.draw.ExShape",
+    shape="record"
+  ];
+}

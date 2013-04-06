@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.idescn.loader.zoomImage.Remark - whohoo AS2 documents</title><script src="../../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../../index-files";
+//--></script><link href="../../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.idescn.loader.zoomImage" rel="up"/><link href="../../../../com/idescn/loader/zoomImage/events/FlagListScroll.html" title="Class com.idescn.loader.zoomImage.events.FlagListScroll" rel="prev"/><link href="../../../../com/idescn/loader/zoomImage/PrePartitionImage.html" title="Class com.idescn.loader.zoomImage.PrePartitionImage" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.idescn.loader.zoomImage.Remark</h1><div class="type_hierachy"><ul><li><strong>com.idescn.loader.zoomImage.Remark</strong></li></ul></div><div class="type_description"></div><div class="type_indexes"><div class="field_index"><h2>Field Index</h2><a href="#addEventListener" title="public addEventListener:Function">addEventListener</a>, <a href="#flagName" title="public flagName:String">flagName</a>, <a href="#flags" title="flags:Array">flags</a>, <a href="#points" title="points:Array">points</a>, <a href="#removeEventListener" title="public removeEventListener:Function">removeEventListener</a>, <a href="#tilesName" title="public tilesName:String">tilesName</a>, <a href="#userName" title="public userName:String">userName</a></div><div class="method_index"><h2>Method Index</h2><div><code>new <a href="#Remark" title="public function Remark(target:Object, tilesName:String)">Remark()</a></code></div><a href="#addMark" title="public function addMark(point:Object):Void">addMark()</a>, <a href="#convertByLevel" title="public function convertByLevel(point:Object, level:Object):Object">convertByLevel()</a>, <a href="#delMark" title="public function delMark(index:Number):Void">delMark()</a>, <a href="#editMark" title="public function editMark(index:Number):Void">editMark()</a>, <a href="#getCurrentPoint" title="public function getCurrentPoint(mcPoint:MovieClip, x:Number, y:Number):Object">getCurrentPoint()</a>, <a href="#readLocal" title="public function readLocal():Void">readLocal()</a>, <a href="#removeFlags" title="public function removeFlags():Void">removeFlags()</a>, <a href="#render" title="public function render(point:Object):MovieClip">render()</a>, <a href="#setDNDFlag" title="public function setDNDFlag(mc:MovieClip):Void">setDNDFlag()</a>, <a href="#setFlagControl" title="public function setFlagControl(mc:MovieClip):Void">setFlagControl()</a>, <a href="#showFlags" title="public function showFlags(isEdit:Boolean):Void">showFlags()</a>, <a href="#toString" title="public function toString():String">toString()</a>, <a href="#writeLocal" title="public function writeLocal():Void">writeLocal()</a></div></div><div class="type_details"><div class="constructor_detail_list"><h2>Constructor Detail</h2><div class="method_details"><a name="Remark"></a><h3>Remark</h3><code class="method_synopsis">public function <strong class="method_name">Remark</strong>(target:<span class="unresolved_type_name">Object</span>, tilesName:<span class="unresolved_type_name">String</span>)</code><div class="method_info"><p>
+ construction function
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>target</code></td><td>point to zoomImage
+ </td></tr><tr><td><code>tilesName</code></td><td>the loading path
+	 </td></tr></table></div></div></div><div class="field_detail_list"><h2>Field Detail</h2><a name="tilesName"></a><h3>tilesName</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">tilesName</strong>:<span class="unresolved_type_name">String</span></code></div><a name="userName"></a><h3>userName</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">userName</strong>:<span class="unresolved_type_name">String</span></code></div><a name="flagName"></a><h3>flagName</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">flagName</strong>:<span class="unresolved_type_name">String</span></code></div><a name="addEventListener"></a><h3>addEventListener</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">addEventListener</strong>:<span class="unresolved_type_name">Function</span></code></div><a name="removeEventListener"></a><h3>removeEventListener</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">removeEventListener</strong>:<span class="unresolved_type_name">Function</span></code></div><a name="points"></a><h3>points</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">points</strong>:<span class="unresolved_type_name">Array</span></code></div><a name="flags"></a><h3>flags</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">flags</strong>:<span class="unresolved_type_name">Array</span></code></div></div><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="removeFlags"></a><h3>removeFlags</h3><code class="method_synopsis">public function <strong class="method_name">removeFlags</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ 把原来在上边的flag删除
+ 
+ </p><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details"><a name="getCurrentPoint"></a><h3>getCurrentPoint</h3><code class="method_synopsis">public function <strong class="method_name">getCurrentPoint</strong>(mcPoint:<span class="unresolved_type_name">MovieClip</span>, x:<span class="unresolved_type_name">Number</span>, y:<span class="unresolved_type_name">Number</span>):<span class="unresolved_type_name">Object</span></code><div class="method_info"><p>
+ 得到mcPoint相对于bottomImage的位置
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>mcPoint</code></td><td></td></tr><tr><td><code>x</code></td><td></td></tr><tr><td><code>y</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details alt_row"><a name="render"></a><h3>render</h3><code class="method_synopsis">public function <strong class="method_name">render</strong>(point:<span class="unresolved_type_name">Object</span>):<span class="unresolved_type_name">MovieClip</span></code><div class="method_info"><p>
+ 在图片上标注flag
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>point</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info"> 
+	 </p></div></div><div class="method_details"><a name="convertByLevel"></a><h3>convertByLevel</h3><code class="method_synopsis">public function <strong class="method_name">convertByLevel</strong>(point:<span class="unresolved_type_name">Object</span>, level:<span class="unresolved_type_name">Object</span>):<span class="unresolved_type_name">Object</span></code><div class="method_info"><p>
+ 把point的坐标根据level重新计算坐标,并返回一个新的point对象
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>point</code></td><td></td></tr><tr><td><code>level</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details alt_row"><a name="showFlags"></a><h3>showFlags</h3><code class="method_synopsis">public function <strong class="method_name">showFlags</strong>(isEdit:<span class="unresolved_type_name">Boolean</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ 把_points内的数据全读出来,并标注上
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>isEdit</code></td><td>如果为真,更新显示的列表,否则只刷新图片上的point,当加载
+ 			部分tiles完成时刷新point
+ </td></tr></table><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details"><a name="addMark"></a><h3>addMark</h3><code class="method_synopsis">public function <strong class="method_name">addMark</strong>(point:<span class="unresolved_type_name">Object</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ 把信息添加入数组内
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>point</code></td><td>{x,y,level,mark,date}
+ </td></tr></table><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details alt_row"><a name="editMark"></a><h3>editMark</h3><code class="method_synopsis">public function <strong class="method_name">editMark</strong>(index:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ 编辑原来的数据
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>index</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details"><a name="delMark"></a><h3>delMark</h3><code class="method_synopsis">public function <strong class="method_name">delMark</strong>(index:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ 删除point
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>index</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details alt_row"><a name="setDNDFlag"></a><h3>setDNDFlag</h3><code class="method_synopsis">public function <strong class="method_name">setDNDFlag</strong>(mc:<span class="unresolved_type_name">MovieClip</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ 设置可拖动的flag
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>mc</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details"><a name="readLocal"></a><h3>readLocal</h3><code class="method_synopsis">public function <strong class="method_name">readLocal</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ 读出本地数据
+ 
+ </p><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details alt_row"><a name="writeLocal"></a><h3>writeLocal</h3><code class="method_synopsis">public function <strong class="method_name">writeLocal</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ 把数据写入本地disk
+ 
+ </p><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details"><a name="setFlagControl"></a><h3>setFlagControl</h3><code class="method_synopsis">public function <strong class="method_name">setFlagControl</strong>(mc:<span class="unresolved_type_name">MovieClip</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ 设定可以与flagList_mc进行通讯的类,用于操作此数据
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>mc</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info">  
+	 </p></div></div><div class="method_details alt_row"><a name="toString"></a><h3>toString</h3><code class="method_synopsis">public function <strong class="method_name">toString</strong>():<span class="unresolved_type_name">String</span></code><div class="method_info"><p>
+ show class name
+ </p><h4>Return</h4><p class="extra_info"> class name
+	 </p></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.idescn.loader.zoomImage" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

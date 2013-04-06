@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.wlash.utils.Matrix - whohoo AS2 documents</title><script src="../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../index-files";
+//--></script><link href="../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.wlash.utils" rel="up"/><link href="../../../com/wangfan/utils/MCblur.html" title="Class com.wangfan.utils.MCblur" rel="prev"/><link href="../../../com/wlash/utils/AddFlashPlatformInfo.html" title="Class com.wlash.utils.AddFlashPlatformInfo" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.wlash.utils.Matrix</h1><div class="type_hierachy"><ul><li><strong>com.wlash.utils.Matrix</strong></li></ul></div><div class="type_description"></div><div class="type_indexes"><div class="field_index"><h2>Field Index</h2><a href="#a" title="public a:Number">a</a>, <a href="#b" title="public b:Number">b</a>, <a href="#c" title="public c:Number">c</a>, <a href="#d" title="public d:Number">d</a>, <a href="#tx" title="public tx:Number">tx</a>, <a href="#ty" title="public ty:Number">ty</a></div><div class="method_index"><h2>Method Index</h2><div><code>new <a href="#Matrix" title="public function Matrix(a:Number, b:Number, c:Number, d:Number, tx:Number, ty:Number)">Matrix()</a></code></div><a href="#apply" title="public function apply(target:MovieClip):Void">apply()</a>, <a href="#clone" title="public function clone():Matrix">clone()</a>, <a href="#concat" title="public function concat(mx:Matrix):Void">concat()</a>, <a href="#createBox" title="public function createBox(scaleX:Number, scaleY:Number, rotation:Number, tx:Number, ty:Number):Void">createBox()</a>, <a href="#createGradientBox" title="public function createGradientBox(width:Number, height:Number, rotation:Number, tx:Number, ty:Number):Object">createGradientBox()</a>, <a href="#getInstance" title="static public function getInstance(target:MovieClip):com.wlash.utils.Matrix">getInstance()</a>, <a href="#identity" title="public function identity():Void">identity()</a>, <a href="#invert" title="public function invert():Void">invert()</a>, <a href="#rotate" title="public function rotate(angle:Number):Void">rotate()</a>, <a href="#scale" title="public function scale(sx:Number, sy:Number):Void">scale()</a>, <a href="#shear" title="public function shear(shearX:Number, shearY:Number):Void">shear()</a>, <a href="#toString" title="public function toString():String">toString()</a>, <a href="#translate" title="public function translate(tx:Number, ty:Number):Void">translate()</a></div></div><div class="type_details"><div class="constructor_detail_list"><h2>Constructor Detail</h2><div class="method_details"><a name="Matrix"></a><h3>Matrix</h3><code class="method_synopsis">public function <strong class="method_name">Matrix</strong>(a:<span class="unresolved_type_name">Number</span>, b:<span class="unresolved_type_name">Number</span>, c:<span class="unresolved_type_name">Number</span>, d:<span class="unresolved_type_name">Number</span>, tx:<span class="unresolved_type_name">Number</span>, ty:<span class="unresolved_type_name">Number</span>)</code><div class="method_info"><p>
+ Creates a new Matrix object with the specified parameters.
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""></table></div></div></div><div class="field_detail_list"><h2>Field Detail</h2><a name="a"></a><h3>a</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">a</strong>:<span class="unresolved_type_name">Number</span></code></div><a name="b"></a><h3>b</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">b</strong>:<span class="unresolved_type_name">Number</span></code></div><a name="c"></a><h3>c</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">c</strong>:<span class="unresolved_type_name">Number</span></code></div><a name="d"></a><h3>d</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">d</strong>:<span class="unresolved_type_name">Number</span></code></div><a name="tx"></a><h3>tx</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">tx</strong>:<span class="unresolved_type_name">Number</span></code></div><a name="ty"></a><h3>ty</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">ty</strong>:<span class="unresolved_type_name">Number</span></code></div></div><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="getInstance"></a><h3>getInstance</h3><code class="method_synopsis">static public function <strong class="method_name">getInstance</strong>(target:<span class="unresolved_type_name">MovieClip</span>):<a href="../../../com/wlash/utils/Matrix.html" class="class_name" title="Class com.wlash.utils.Matrix">Matrix</a></code><div class="method_info"><p>
+ get a matrix 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>target</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info"> a new matrix 
+	</p></div></div><div class="method_details"><a name="identity"></a><h3>identity</h3><code class="method_synopsis">public function <strong class="method_name">identity</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ Sets each matrix property to a value that cause a transformed 
+ movie clip or geometric construct to be identical to the original. 
+ After calling the identity() method, the resulting matrix has the 
+ following properties: a=1, b=0, c=0, d=1, tx=0, ty=0.
+		 /		 \
+		| 1  0	0 |
+ 		| 0	 1	0 |
+		| 0	 0	1 |
+ 		 \		 /
+	</p></div></div><div class="method_details alt_row"><a name="concat"></a><h3>concat</h3><code class="method_synopsis">public function <strong class="method_name">concat</strong>(mx:<a href="../../../com/wlash/utils/Matrix.html" class="class_name" title="Class com.wlash.utils.Matrix">Matrix</a>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ Concatenates a matrix with the current matrix, effectively 
+ combining the geometric effects of the two. In mathematical 
+ terms, concatenating two matrices is the same as combining 
+ them using matrix multiplication.
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>mx</code></td><td>mx is Matrix that wanna concat.
+	</td></tr></table></div></div><div class="method_details"><a name="translate"></a><h3>translate</h3><code class="method_synopsis">public function <strong class="method_name">translate</strong>(tx:<span class="unresolved_type_name">Number</span>, ty:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ Modifies a matrix so that the effect of its transformation is to 
+ move an object along the x and y axes.
+ 		 /		 \
+		| 1  0	tx|
+ 		| 0	 1	ty|
+		| 0	 0	1 |
+ 		 \		 /
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>tx</code></td><td>tx is _x,
+ </td></tr><tr><td><code>ty</code></td><td>ty is _y;
+	</td></tr></table></div></div><div class="method_details alt_row"><a name="scale"></a><h3>scale</h3><code class="method_synopsis">public function <strong class="method_name">scale</strong>(sx:<span class="unresolved_type_name">Number</span>, sy:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ Modifies a matrix so that its effect, when applied, is to resize 
+ an image. In the resized image the location of each pixel by on 
+ the x axis will be multiplied by sx, and on the y axis it will be 
+ muiplied by sy. 
+		 /		 \
+		| sx 0	0 |
+ 		| 0	 xy 0 |
+		| 0	 0	1 |
+ 		 \		 /
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>sx</code></td><td>sx is _xscale
+ </td></tr><tr><td><code>sy</code></td><td>sy is _yscale
+	</td></tr></table></div></div><div class="method_details"><a name="rotate"></a><h3>rotate</h3><code class="method_synopsis">public function <strong class="method_name">rotate</strong>(angle:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ Sets the values in the current matrix so it can be used to apply 
+ a rotation transformation. The rotate() method alters the a and d 
+ properties of the matrix object.
+ 		 /		 		  \
+		| cos(q)  sin(q) 0 |
+ 		| -sin(q) cos(q) 0 |
+		|   0	   0	 1 |
+ 		 \		 		  /
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>angle</code></td><td>The rotation angle in radians.
+	</td></tr></table></div></div><div class="method_details alt_row"><a name="shear"></a><h3>shear</h3><code class="method_synopsis">public function <strong class="method_name">shear</strong>(shearX:<span class="unresolved_type_name">Number</span>, shearY:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ Progressively slides the image in a direction parallel to the x or y axis. 
+ The value skx acts as a multiplier controlling the sliding distance along 
+ the x axis; sky controls the sliding distance along the y axis.
+ 		 /			 		 \
+		|   0  	  shearX	0 |
+ 		| shearY	0 		0 |
+		|   0	    0		1 |
+ 		 \		 			 /
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>shearX</code></td><td>the value is radians
+ </td></tr><tr><td><code>shearY</code></td><td>the value is radians
+	</td></tr></table></div></div><div class="method_details"><a name="clone"></a><h3>clone</h3><code class="method_synopsis">public function <strong class="method_name">clone</strong>():<a href="../../../com/wlash/utils/Matrix.html" class="class_name" title="Class com.wlash.utils.Matrix">Matrix</a></code><div class="method_info"><p>
+ Returns a new Matrix object that is a clone of this matrix, with an exact 
+ copy of the contained object.
+ </p><h4>Return</h4><p class="extra_info">	a new Matrix
+	</p></div></div><div class="method_details alt_row"><a name="invert"></a><h3>invert</h3><code class="method_synopsis">public function <strong class="method_name">invert</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ An inverted matrix will perform the opposite trasnformation of the original 
+ martix. You can apply an inverted matrix to an object to undo the transformation 
+ performed when applying the original matrix.
+	</p></div></div><div class="method_details"><a name="createBox"></a><h3>createBox</h3><code class="method_synopsis">public function <strong class="method_name">createBox</strong>(scaleX:<span class="unresolved_type_name">Number</span>, scaleY:<span class="unresolved_type_name">Number</span>, rotation:<span class="unresolved_type_name">Number</span>, tx:<span class="unresolved_type_name">Number</span>, ty:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ The createBox() method includes parameters for scaling, rotation, and translation.
+ When applied to a matrix it sets the matrix's values based on those parameters. 
+ Using the createBox() lets you obtain the same matrix as you would if you were to 
+ apply the identity(), rotate(), scale(), and translate() methods in succession.
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>scaleX</code></td><td>_xscale
+ </td></tr><tr><td><code>scaleY</code></td><td>_yscale
+ </td></tr><tr><td><code>rotation</code></td><td>_rotation
+ </td></tr><tr><td><code>tx</code></td><td>_x
+ </td></tr><tr><td><code>ty</code></td><td>_y
+	</td></tr></table></div></div><div class="method_details alt_row"><a name="createGradientBox"></a><h3>createGradientBox</h3><code class="method_synopsis">public function <strong class="method_name">createGradientBox</strong>(width:<span class="unresolved_type_name">Number</span>, height:<span class="unresolved_type_name">Number</span>, rotation:<span class="unresolved_type_name">Number</span>, tx:<span class="unresolved_type_name">Number</span>, ty:<span class="unresolved_type_name">Number</span>):<span class="unresolved_type_name">Object</span></code><div class="method_info"><p>
+ Creates the specific style of matrix expected by the MovieClip.beginGradientFill() method. 
+ Width and height are scaled to a scaleX/scaleY pair and the tx/ty values are offset by 
+ half the width and height.
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>width</code></td><td></td></tr><tr><td><code>height</code></td><td></td></tr><tr><td><code>rotation</code></td><td></td></tr><tr><td><code>tx</code></td><td></td></tr><tr><td><code>ty</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info"> Object {a:200,b:0,c:0,d:0,e:200,f:0,g:100,h:100,i:1}
+	</p></div></div><div class="method_details"><a name="apply"></a><h3>apply</h3><code class="method_synopsis">public function <strong class="method_name">apply</strong>(target:<span class="unresolved_type_name">MovieClip</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ apply this matrix to mc
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>target</code></td><td></td></tr></table></div></div><div class="method_details alt_row"><a name="toString"></a><h3>toString</h3><code class="method_synopsis">public function <strong class="method_name">toString</strong>():<span class="unresolved_type_name">String</span></code><div class="method_info"><p>
+ show the matrix value
+ </p><h4>Return</h4><p class="extra_info"> [a=1, b=0, c=0, d=1, tx=0, ty=0]
+	</p></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.wlash.utils" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

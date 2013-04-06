@@ -1,0 +1,12 @@
+<map id="class_diagram" name="class_diagram">
+<area shape="rect" href="Remark.html" title="com.idescn.loader.zoomImage.Remark" alt="" coords="78,654,158,702" />
+<area shape="rect" href="PrePartitionImage.html" title="com.idescn.loader.zoomImage.PrePartitionImage" alt="" coords="40,582,195,630" />
+<area shape="rect" href="LoadTilesInfoXML.html" title="com.idescn.loader.zoomImage.LoadTilesInfoXML" alt="" coords="34,510,202,558" />
+<area shape="rect" href="LoadTileImageEvents2.html" title="com.idescn.loader.zoomImage.LoadTileImageEvents2" alt="" coords="20,438,215,486" />
+<area shape="rect" href="LoadTileImageEvents.html" title="com.idescn.loader.zoomImage.LoadTileImageEvents" alt="" coords="26,366,210,414" />
+<area shape="rect" href="LoadProgress.html" title="com.idescn.loader.zoomImage.LoadProgress" alt="" coords="55,294,180,342" />
+<area shape="rect" href="LoadBottomImageEvents.html" title="com.idescn.loader.zoomImage.LoadBottomImageEvents" alt="" coords="12,222,223,270" />
+<area shape="rect" href="ImageNavigation.html" title="com.idescn.loader.zoomImage.ImageNavigation" alt="" coords="44,150,191,198" />
+<area shape="rect" href="FlagControl.html" title="com.idescn.loader.zoomImage.FlagControl" alt="" coords="62,78,174,126" />
+<area shape="rect" href="BottomImageTweenEvents.html" title="com.idescn.loader.zoomImage.BottomImageTweenEvents" alt="" coords="7,6,228,54" />
+</map>

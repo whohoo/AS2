@@ -1,0 +1,23 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  ScrollText[
+    label="ScrollText",
+    URL="ScrollText.html",
+    tooltip="com.idescn.utils.scroll.ScrollText",
+    shape="record"
+  ];
+  ScrollMC[
+    label="ScrollMC",
+    URL="ScrollMC.html",
+    tooltip="com.idescn.utils.scroll.ScrollMC",
+    shape="record"
+  ];
+  ScrollBar[
+    label="ScrollBar",
+    URL="ScrollBar.html",
+    tooltip="com.idescn.utils.scroll.ScrollBar",
+    shape="record"
+  ];
+  ScrollBar -> ScrollText;
+  ScrollBar -> ScrollMC;
+}

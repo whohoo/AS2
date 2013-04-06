@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.idescn.graphics.Oscillogram - whohoo AS2 documents</title><script src="../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../index-files";
+//--></script><link href="../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.idescn.graphics" rel="up"/><link href="../../../com/idescn/loader/ImageBox.html" title="Class com.idescn.loader.ImageBox" rel="prev"/><link href="../../../com/idescn/games/VehicleEngine.html" title="Class com.idescn.games.VehicleEngine" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.idescn.graphics.Oscillogram</h1><div class="type_hierachy"><ul><li><strong>com.idescn.graphics.Oscillogram</strong></li></ul></div><div class="type_description"><h2>Description</h2><p>
+ draw line like oscillogram
+ <p></p>
+ * you could drag ImageBox from component panel(Ctrl+F7) in flash to stage<br></br>
+ and define properties in Parameters panel(Alt+F7).<br></br>
+ <b>Parameters:</b>
+ <ul>
+ <li><b>axisColor:</b> color value, eg: 0xFFFFFF</li>
+ <li><b>backgroundColor:</b> color value, eg: 0xFFFFFF</li>
+ <li><b>lineColor:</b> color value, eg: 0xFFFFFF</li>
+ <li><b>offset:</b> a positive number</li>
+ <li><b>showGrid:</b> a positive number of alpha</li>
+ <li><b>showHint:</b> true of false</li>
+ </ul>
+ <p></p>
+ there are few of dispatchEvents, you could add those events by addEventListener(event,handler)<br>
+ <ul>
+ <li>onMaxValueInAll({value, position}): the max value in all points </li>
+ <li>onMinValueInAll({value, position}): the min value in all points </li>
+ <li>onMaxValue({value}): the max value </li>
+ <li>onMinValue({value}): the min value </li>
+ 
+ </ul>
+ 
+</p></div><div class="type_indexes"><div class="field_index"><h2>Field Index</h2><a href="#addEventListener" title="public addEventListener:Function">addEventListener</a>, <a href="#axisColor" title="axisColor:Number">axisColor</a>, <a href="#backgroundColor" title="backgroundColor:Number">backgroundColor</a>, <a href="#dataProvider" title="dataProvider:Array">dataProvider</a>, <a href="#heightBox" title="heightBox:Number">heightBox</a>, <a href="#lineColor" title="lineColor:Number">lineColor</a>, <a href="#maxY" title="maxY:Number">maxY</a>, <a href="#minY" title="minY:Number">minY</a>, <a href="#offset" title="offset:Number">offset</a>, <a href="#removeEventListener" title="public removeEventListener:Function">removeEventListener</a>, <a href="#scaleX" title="scaleX:Number">scaleX</a>, <a href="#scaleY" title="scaleY:Number">scaleY</a>, <a href="#showGrid" title="showGrid:Number">showGrid</a>, <a href="#showHint" title="showHint:Boolean">showHint</a>, <a href="#widthBox" title="widthBox:Number">widthBox</a></div><div class="method_index"><h2>Method Index</h2><div><code>new <a href="#Oscillogram" title="public function Oscillogram()">Oscillogram()</a></code></div><a href="#addData" title="public function addData(data:Number):Void">addData()</a>, <a href="#removeData" title="public function removeData():Number">removeData()</a>, <a href="#resize" title="public function resize(w:Number, h:Number):Void">resize()</a>, <a href="#toString" title="public function toString():String">toString()</a>, <a href="#update" title="public function update():Void">update()</a></div></div><div class="type_details"><div class="constructor_detail_list"><h2>Constructor Detail</h2><div class="method_details"><a name="Oscillogram"></a><h3>Oscillogram</h3><code class="method_synopsis">public function <strong class="method_name">Oscillogram</strong>()</code><div class="method_info"><p>
+ contruct function.<br></br>
+ you not use new Oscillogram() to constrruct. you ought to drag Oscillogram from<br></br>
+ Component panel(Ctrl+F7) to stage.
+	 </p></div></div></div><div class="field_detail_list"><h2>Field Detail</h2><a name="addEventListener"></a><h3>addEventListener</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">addEventListener</strong>:<span class="unresolved_type_name">Function</span></code><div class="field_info">
+ <b>In fact</b>, addEventListener(event:String, handler) is method.<br></br>
+ add a listener for a particular event<br></br>
+ parameters event the name of the event ("click", "change", etc)<br></br>
+ parameters handler the function or object that should be called
+	</div></div><a name="removeEventListener"></a><h3>removeEventListener</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">removeEventListener</strong>:<span class="unresolved_type_name">Function</span></code><div class="field_info">
+ <b>In fact</b>, removeEventListener(event:String, handler) is method.<br></br>
+ remove a listener for a particular event<br></br>
+ parameters event the name of the event ("click", "change", etc)<br></br>
+ parameters handler the function or object that should be called
+	</div></div><a name="dataProvider"></a><h3>dataProvider</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">dataProvider</strong>:<span class="unresolved_type_name">Array</span></code><div class="field_info">dataProvider is a array include points	 </div></div><a name="minY"></a><h3>minY</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">minY</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the min Y axis</div></div><a name="maxY"></a><h3>maxY</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">maxY</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the max Y axis</div></div><a name="scaleX"></a><h3>scaleX</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">scaleX</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the scale of x</div></div><a name="scaleY"></a><h3>scaleY</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">scaleY</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the scale of y</div></div><a name="showGrid"></a><h3>showGrid</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">showGrid</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">grid alpha value</div></div><a name="showHint"></a><h3>showHint</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">showHint</strong>:<span class="unresolved_type_name">Boolean</span></code><div class="field_info"> is show hint when the max or min value are</div></div><a name="axisColor"></a><h3>axisColor</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">axisColor</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the color of axis</div></div><a name="lineColor"></a><h3>lineColor</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">lineColor</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the color of line</div></div><a name="backgroundColor"></a><h3>backgroundColor</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">backgroundColor</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the color of background</div></div><a name="widthBox"></a><h3>widthBox</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">widthBox</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">width of box</div></div><a name="heightBox"></a><h3>heightBox</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">heightBox</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">height of box</div></div><a name="offset"></a><h3>offset</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">offset</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the offset's value</div></div></div><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="addData"></a><h3>addData</h3><code class="method_synopsis">public function <strong class="method_name">addData</strong>(data:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ add data to this oscillogram, and refresh it
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>data</code></td><td>data that you want to add
+ 
+	</td></tr></table></div></div><div class="method_details"><a name="removeData"></a><h3>removeData</h3><code class="method_synopsis">public function <strong class="method_name">removeData</strong>():<span class="unresolved_type_name">Number</span></code><div class="method_info"><p>
+ remove data from this oscillogram, and refresh it
+ </p><h4>Return</h4><p class="extra_info"> the remove data
+ 
+	</p></div></div><div class="method_details alt_row"><a name="update"></a><h3>update</h3><code class="method_synopsis">public function <strong class="method_name">update</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ refresh oscillogram's data
+ 
+	</p></div></div><div class="method_details"><a name="resize"></a><h3>resize</h3><code class="method_synopsis">public function <strong class="method_name">resize</strong>(w:<span class="unresolved_type_name">Number</span>, h:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ resize the oscillogram size by this modeth.
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>w</code></td><td>w means width
+ </td></tr><tr><td><code>h</code></td><td>h means height
+ 
+	</td></tr></table></div></div><div class="method_details alt_row"><a name="toString"></a><h3>toString</h3><code class="method_synopsis">public function <strong class="method_name">toString</strong>():<span class="unresolved_type_name">String</span></code><div class="method_info"><p>
+ output this name
+ </p><h4>Return</h4><p class="extra_info"> this name
+ 
+	</p></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.idescn.graphics" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

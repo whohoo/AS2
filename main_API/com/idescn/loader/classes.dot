@@ -1,0 +1,15 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  ZoomImage[
+    label="ZoomImage",
+    URL="ZoomImage.html",
+    tooltip="com.idescn.loader.ZoomImage",
+    shape="record"
+  ];
+  ImageBox[
+    label="ImageBox",
+    URL="ImageBox.html",
+    tooltip="com.idescn.loader.ImageBox",
+    shape="record"
+  ];
+}

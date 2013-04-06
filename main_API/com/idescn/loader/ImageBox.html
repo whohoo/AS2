@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.idescn.loader.ImageBox - whohoo AS2 documents</title><script src="../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../index-files";
+//--></script><link href="../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.idescn.loader" rel="up"/><link href="../../../com/idescn/loader/ZoomImage.html" title="Class com.idescn.loader.ZoomImage" rel="prev"/><link href="../../../com/idescn/graphics/Oscillogram.html" title="Class com.idescn.graphics.Oscillogram" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.idescn.loader.ImageBox</h1><div class="type_hierachy"><ul><li><strong>com.idescn.loader.ImageBox</strong></li></ul></div><div class="type_description"><h2>Description</h2><p>
+ <b>COMPONENT [ImageBox].</b>
+ <p></p>
+ you could drag ImageBox from component panel(Ctrl+F7) in flash to stage<br></br>
+ and define properties in Parameters panel(Alt+F7).<br></br>
+ <b>Parameters:</b>
+ <ul>
+ <li><b>algin:</b> C,T,B,R,L,TR,TL,BR,BL</li>
+ <li><b>borderColor:</b> color value, eg: 0xFFFFFF</li>
+ <li><b>borderThick:</b> a positive number</li>
+ <li><b>fadeInFrames:</b> a positive number</li>
+ <li><b>fitMode:</b> scale,width,height,both,none</li>
+ <li><b>imageUrl:</b> a image path</li>
+ </ul>
+ <p></p>
+ there are few of dispatchEvents, you could add those events by addEventListener(event,handler)<br>
+ <ul>
+ <li>onLoadStart({}): same to MovieClipLoader </li>
+ <li>onLoadProgress({loadedBytes,totalBytes}): same to MovieClipLoader </li>
+ <li>onLoadComplete({}): same to MovieClipLoader </li>
+ <li>onLoadInit({}): same to MovieClipLoader </li>
+ <li>onLoadError({errorCode}): same to MovieClipLoader </li>
+ <li>onImageShow({}): after fadeIn image</li>
+ 
+ </ul>
+</p></div><div class="type_indexes"><div class="field_index"><h2>Field Index</h2><a href="#addEventListener" title="public addEventListener:Function">addEventListener</a>, <a href="#align" title="align:String">align</a>, <a href="#borderColor" title="borderColor:Number">borderColor</a>, <a href="#borderThick" title="borderThick:Number">borderThick</a>, <a href="#boxHeight" title="boxHeight:Number">boxHeight</a>, <a href="#boxWidth" title="boxWidth:Number">boxWidth</a>, <a href="#fadeInFrames" title="fadeInFrames:Number">fadeInFrames</a>, <a href="#fitMode" title="fitMode:String">fitMode</a>, <a href="#imageHeight" title="imageHeight:Number">imageHeight</a>, <a href="#imageUrl" title="imageUrl:String">imageUrl</a>, <a href="#imageWidth" title="imageWidth:Number">imageWidth</a>, <a href="#imageXscale" title="imageXscale:Number">imageXscale</a>, <a href="#imageYscale" title="imageYscale:Number">imageYscale</a>, <a href="#removeEventListener" title="public removeEventListener:Function">removeEventListener</a></div><div class="method_index"><h2>Method Index</h2><a href="#alignImage" title="public function alignImage(align:String):Void">alignImage()</a>, <a href="#fitImage" title="public function fitImage(fitMode:String):Void">fitImage()</a>, <a href="#loadImage" title="public function loadImage(url:String):Void">loadImage()</a>, <a href="#resize" title="public function resize(w:Number, h:Number):Void">resize()</a>, <a href="#showImage" title="public function showImage(fr:Number):Void">showImage()</a>, <a href="#toString" title="public function toString():String">toString()</a></div></div><div class="type_details"><div class="field_detail_list"><h2>Field Detail</h2><a name="addEventListener"></a><h3>addEventListener</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">addEventListener</strong>:<span class="unresolved_type_name">Function</span></code><div class="field_info">
+ <b>In fact</b>, addEventListener(event:String, handler) is method.<br></br>
+ add a listener for a particular event<br></br>
+ parameters event the name of the event ("click", "change", etc)<br></br>
+ parameters handler the function or object that should be called
+	</div></div><a name="removeEventListener"></a><h3>removeEventListener</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">removeEventListener</strong>:<span class="unresolved_type_name">Function</span></code><div class="field_info">
+ <b>In fact</b>, removeEventListener(event:String, handler) is method.<br></br>
+ remove a listener for a particular event<br></br>
+ parameters event the name of the event ("click", "change", etc)<br></br>
+ parameters handler the function or object that should be called
+	</div></div><a name="imageUrl"></a><h3>imageUrl</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">imageUrl</strong>:<span class="unresolved_type_name">String</span></code><div class="field_info">a url of image.</div></div><a name="borderThick"></a><h3>borderThick</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">borderThick</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">border thick value, the value must >0</div></div><a name="borderColor"></a><h3>borderColor</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">borderColor</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">if border thick value >0, the border color.</div></div><a name="fitMode"></a><h3>fitMode</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">fitMode</strong>:<span class="unresolved_type_name">String</span></code><div class="field_info">the fit mode, value are [scale,width,height,both,none]</div></div><a name="align"></a><h3>align</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">align</strong>:<span class="unresolved_type_name">String</span></code><div class="field_info">align mode, value are [C,T,B,R,L,TR,TL,BR,BL]</div></div><a name="fadeInFrames"></a><h3>fadeInFrames</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">fadeInFrames</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">the fade in frames.</div></div><a name="boxWidth"></a><h3>boxWidth</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">boxWidth</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">width of box</div></div><a name="boxHeight"></a><h3>boxHeight</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">boxHeight</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">height of box</div></div><a name="imageWidth"></a><h3>imageWidth</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">imageWidth</strong>:<span class="unresolved_type_name">Number</span> <em class="read_write_only">[Read Only]</em></code><div class="field_info">width of image</div></div><a name="imageHeight"></a><h3>imageHeight</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">imageHeight</strong>:<span class="unresolved_type_name">Number</span> <em class="read_write_only">[Read Only]</em></code><div class="field_info">height of image</div></div><a name="imageXscale"></a><h3>imageXscale</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">imageXscale</strong>:<span class="unresolved_type_name">Number</span> <em class="read_write_only">[Read Only]</em></code><div class="field_info">xscale of image</div></div><a name="imageYscale"></a><h3>imageYscale</h3><div class="field_details"><code class="field_synopsis"><strong class="field_name">imageYscale</strong>:<span class="unresolved_type_name">Number</span> <em class="read_write_only">[Read Only]</em></code><div class="field_info">yscale of image</div></div></div><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="loadImage"></a><h3>loadImage</h3><code class="method_synopsis">public function <strong class="method_name">loadImage</strong>(url:<span class="unresolved_type_name">String</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ load a image to show by paramenet point out.
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>url</code></td><td>url is URL that a jpg or swf address
+	</td></tr></table></div></div><div class="method_details"><a name="fitImage"></a><h3>fitImage</h3><code class="method_synopsis">public function <strong class="method_name">fitImage</strong>(fitMode:<span class="unresolved_type_name">String</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ adjust this image that be loaded to show, you could set value of 
+ both, scale ,width, height or none
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>fitMode</code></td><td>fitMode is a value of both, scale ,width, height or none
+	</td></tr></table></div></div><div class="method_details alt_row"><a name="alignImage"></a><h3>alignImage</h3><code class="method_synopsis">public function <strong class="method_name">alignImage</strong>(align:<span class="unresolved_type_name">String</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ adjust this image algin,
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>align</code></td><td>align value of T, B, R, L, TR, TL, BR, BL or ""
+	</td></tr></table></div></div><div class="method_details"><a name="resize"></a><h3>resize</h3><code class="method_synopsis">public function <strong class="method_name">resize</strong>(w:<span class="unresolved_type_name">Number</span>, h:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ resize the image 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>w</code></td><td>width of image
+ </td></tr><tr><td><code>h</code></td><td>height of image
+	</td></tr></table></div></div><div class="method_details alt_row"><a name="showImage"></a><h3>showImage</h3><code class="method_synopsis">public function <strong class="method_name">showImage</strong>(fr:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ show this image when loading is finish,and it would fade in
+  alpha show image in defined fr
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>fr</code></td><td>after frame show image.
+	</td></tr></table></div></div><div class="method_details"><a name="toString"></a><h3>toString</h3><code class="method_synopsis">public function <strong class="method_name">toString</strong>():<span class="unresolved_type_name">String</span></code><div class="method_info"><p>
+ show this class name
+ </p><h4>Return</h4><p class="extra_info">  class name
+	 </p></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.idescn.loader" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

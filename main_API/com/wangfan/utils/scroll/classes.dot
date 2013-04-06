@@ -1,0 +1,9 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  ScrollBar[
+    label="ScrollBar",
+    URL="ScrollBar.html",
+    tooltip="com.wangfan.utils.scroll.ScrollBar",
+    shape="record"
+  ];
+}

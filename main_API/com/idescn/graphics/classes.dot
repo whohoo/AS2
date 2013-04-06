@@ -1,0 +1,9 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  Oscillogram[
+    label="Oscillogram",
+    URL="Oscillogram.html",
+    tooltip="com.idescn.graphics.Oscillogram",
+    shape="record"
+  ];
+}

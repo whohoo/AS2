@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.idescn.data.Form - whohoo AS2 documents</title><script src="../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../index-files";
+//--></script><link href="../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.idescn.data" rel="up"/><link href="../../../com/idescn/draw/ExShape.html" title="Class com.idescn.draw.ExShape" rel="prev"/><link href="../../../com/idescn/data/Chart.html" title="Class com.idescn.data.Chart" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.idescn.data.Form</h1><div class="type_hierachy"><ul><li><strong>com.idescn.data.Form</strong></li></ul></div><div class="type_description"><h2>Description</h2><p>
+ form for input textField
+ <p>
+ </p>
+ put all input textfield in form instance, user could press ENTER skip next <br>
+ </br>
+ input textfield.<br>
+ </br>
+ email_txt.restrict = "A-Za-z0-9\\-_.@"
+ phone_txt.restrict = "0-9\\-"	;
+ <pre>
+ <b>eg:</b>
+ Form.hintText	=	hints_txt;
+ var form	=	Form.getInstanceof();
+ form.add(name_txt);
+ form.add(password_txt);
+ form.build(true);
+ </pre>
+ 
+</p></div><div class="type_indexes"><div class="field_index"><h2>Field Index</h2><a href="#hintText" title="static public hintText:TextField">hintText</a>, <a href="#keyCode" title="public keyCode:Number">keyCode</a></div><div class="method_index"><h2>Method Index</h2><a href="#addItem" title="public function addItem(item:Object):Void">addItem()</a>, <a href="#build" title="public function build(enabled:Boolean):Void">build()</a>, <a href="#checkDate" title="static public function checkDate(dateStr:String):Boolean">checkDate()</a>, <a href="#checkEmail" title="static public function checkEmail(mailStr:String):Boolean">checkEmail()</a>, <a href="#checkMobile" title="static public function checkMobile(mobileNum:Object):Boolean">checkMobile()</a>, <a href="#getInstance" title="static public function getInstance(keyCode:Number):Form">getInstance()</a>, <a href="#resetTextField" title="public function resetTextField():Void">resetTextField()</a>, <a href="#showHint" title="static public function showHint(text:String, second:Number, txt:TextField):Void">showHint()</a>, <a href="#toString" title="public function toString():String">toString()</a></div></div><div class="type_details"><div class="field_detail_list"><h2>Field Detail</h2><a name="keyCode"></a><h3>keyCode</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">keyCode</strong>:<span class="unresolved_type_name">Number</span></code><div class="field_info">
+ define the shortcut key for switch in all input text field.<br></br>
+ the default keyCode [Enter](13)
+	</div></div><a name="hintText"></a><h3>hintText</h3><div class="field_details"><code class="field_synopsis">static public <strong class="field_name">hintText</strong>:<span class="unresolved_type_name">TextField</span></code><div class="field_info">
+ set the hint text, when some info wanna hint.<br></br>
+ this is a textfield embed font that you wannna hint.
+	</div></div></div><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="getInstance"></a><h3>getInstance</h3><code class="method_synopsis">static public function <strong class="method_name">getInstance</strong>(keyCode:<span class="unresolved_type_name">Number</span>):<a href="../../../com/idescn/data/Form.html" class="class_name" title="Class com.idescn.data.Form">Form</a></code><div class="method_info"><p>
+ create only one form.<br></br>
+ this class no contruct function, you only create instance by the method.
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>keyCode</code></td><td></td></tr></table><h4>Return</h4><p class="extra_info"> the only form you could create.
+	</p></div></div><div class="method_details"><a name="addItem"></a><h3>addItem</h3><code class="method_synopsis">public function <strong class="method_name">addItem</strong>(item:<span class="unresolved_type_name">Object</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ add textfield or button or movieclip.<br></br>
+ if out of textfield or button, it would throw a error.
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>item</code></td><td>textfield or button.
+ </td></tr></table><h4>Throws</h4><table class="exceptions extra_info" summary=""><tr><td><span class="unresolved_type_name">Error</span></td><td>if there is a failure in not textfield or button or movieclip of typeof item.
+	</td></tr></table></div></div><div class="method_details alt_row"><a name="build"></a><h3>build</h3><code class="method_synopsis">public function <strong class="method_name">build</strong>(enabled:<span class="unresolved_type_name">Boolean</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ build listen event, when add all item in this, you ought to build to start
+ listen the user action.
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>enabled</code></td><td>if true, could skip next input textfield by press keyCode.
+	</td></tr></table></div></div><div class="method_details"><a name="resetTextField"></a><h3>resetTextField</h3><code class="method_synopsis">public function <strong class="method_name">resetTextField</strong>():<span class="void_name">Void</span></code><div class="method_info"><p>
+ reset all input textfield
+	</p></div></div><div class="method_details alt_row"><a name="toString"></a><h3>toString</h3><code class="method_synopsis">public function <strong class="method_name">toString</strong>():<span class="unresolved_type_name">String</span></code><div class="method_info"><p>
+ show this class name
+ </p><h4>Return</h4><p class="extra_info"> class name
+	</p></div></div><div class="method_details"><a name="checkEmail"></a><h3>checkEmail</h3><code class="method_synopsis">static public function <strong class="method_name">checkEmail</strong>(mailStr:<span class="unresolved_type_name">String</span>):<span class="unresolved_type_name">Boolean</span></code><div class="method_info"><p>
+ check email,<br></br>
+ olny [restrict = "A-Za-z0-9\\-_.@"]
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>mailStr</code></td><td>eamil address
+ </td></tr></table><h4>Return</h4><p class="extra_info"> true or false
+	</p></div></div><div class="method_details alt_row"><a name="checkMobile"></a><h3>checkMobile</h3><code class="method_synopsis">static public function <strong class="method_name">checkMobile</strong>(mobileNum:<span class="unresolved_type_name">Object</span>):<span class="unresolved_type_name">Boolean</span></code><div class="method_info"><p>
+ check mobile number,<br>
+ </br>
+ olny for china
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>mobileNum</code></td><td>mobile number
+ </td></tr></table><h4>Return</h4><p class="extra_info"> false if invaild.
+	</p></div></div><div class="method_details"><a name="checkDate"></a><h3>checkDate</h3><code class="method_synopsis">static public function <strong class="method_name">checkDate</strong>(dateStr:<span class="unresolved_type_name">String</span>):<span class="unresolved_type_name">Boolean</span></code><div class="method_info"><p>
+ 
+ check date valid
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>dateStr</code></td><td>format[yyy-MM-dd hh:mm:ss]
+	</td></tr></table></div></div><div class="method_details alt_row"><a name="showHint"></a><h3>showHint</h3><code class="method_synopsis">static public function <strong class="method_name">showHint</strong>(text:<span class="unresolved_type_name">String</span>, second:<span class="unresolved_type_name">Number</span>, txt:<span class="unresolved_type_name">TextField</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ 
+ hints, you must embed font in that textfield or you would not see the words,<br>
+ </br>
+ because the textfield display by fade in.
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>text</code></td><td>show text
+ </td></tr><tr><td><code>second</code></td><td>invisble after second
+ </td></tr><tr><td><code>txt</code></td><td>point out another textfiled to show words, the default one is defalut
+    by Form.hintText.
+	</td></tr></table></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.idescn.data" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

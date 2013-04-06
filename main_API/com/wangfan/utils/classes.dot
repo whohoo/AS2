@@ -1,0 +1,9 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  MCblur[
+    label="MCblur",
+    URL="MCblur.html",
+    tooltip="com.wangfan.utils.MCblur",
+    shape="record"
+  ];
+}

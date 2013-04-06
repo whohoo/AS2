@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><title>com.wangfan.utils.MCblur - whohoo AS2 documents</title><script src="../../../quicknav.js" type="text/javascript"></script><script><!--
+document.quicknavBasePath="../../../index-files";
+//--></script><link href="../../../style.css" title="JavaDoc" rel="stylesheet" type="text/css"/><link href="../../../unnatural.css" title="Unnatural" rel="alternate stylesheet" type="text/css"/><link href="../../../overview-summary.html" title="Overview" rel="top"/><link href="package-summary.html" title="Package com.wangfan.utils" rel="up"/><link href="../../../com/wangfan/utils/scroll/ScrollBar.html" title="Class com.wangfan.utils.scroll.ScrollBar" rel="prev"/><link href="../../../com/wlash/utils/Matrix.html" title="Class com.wlash.utils.Matrix" rel="next"/><meta name="generator" content="http://www.badgers-in-foil.co.uk/projects/as2api/"/><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/></head><body><h1>Class com.wangfan.utils.MCblur</h1><div class="type_hierachy"><ul><li><strong>com.wangfan.utils.MCblur</strong></li></ul></div><div class="type_description"><h2>Description</h2><p>
+  make a movieclip playing to end frame by frame, or playing to frist frame by
+  frame. 
+  <p></p>
+ <b>NOTE: those method only for flash8 above.</b>
+  there are only one method(initialize()) you must write, if you would like<br> 
+  MovieClip.moveIn() or MovieClip.moveOut() methods. 
+ <pre>
+ <b>eg:</b>
+ com.idescn.utils.MCblur.initialize();//make all movieclip.
+ //or
+ com.idescn.utils.MCblur.initialize(target_mc);//only target_mc.
+ 
+	//target_mc.stop();
+ target_mc.blurX	=	50;//0-255
+
+ target_mc.blurY	=	100;//0-255
+
+ target_mc.blurQuality	=	3;//0-15
+ </pre>
+ 
+ </p></div><div class="type_indexes"><div class="field_index"><h2>Field Index</h2><a href="#filters" title="public filters:Array">filters</a></div><div class="method_index"><h2>Method Index</h2><a href="#getBlurQuality" title="public function getBlurQuality():Number">getBlurQuality()</a>, <a href="#getBlurX" title="public function getBlurX():Number">getBlurX()</a>, <a href="#getBlurY" title="public function getBlurY():Number">getBlurY()</a>, <a href="#initialize" title="static public function initialize(target:MovieClip):Boolean">initialize()</a>, <a href="#setBlurQuality" title="public function setBlurQuality(value:Number):Void">setBlurQuality()</a>, <a href="#setBlurX" title="public function setBlurX(value:Number):Void">setBlurX()</a>, <a href="#setBlurY" title="public function setBlurY(value:Number):Void">setBlurY()</a></div></div><div class="type_details"><div class="field_detail_list"><h2>Field Detail</h2><a name="filters"></a><h3>filters</h3><div class="field_details"><code class="field_synopsis">public <strong class="field_name">filters</strong>:<span class="unresolved_type_name">Array</span></code></div></div><div class="method_detail_list"><h2>Method Detail</h2><div class="method_details alt_row"><a name="initialize"></a><h3>initialize</h3><code class="method_synopsis">static public function <strong class="method_name">initialize</strong>(target:<span class="unresolved_type_name">MovieClip</span>):<span class="unresolved_type_name">Boolean</span></code><div class="method_info"><p>
+ initiallize target(movieclip), make target had tow methods(setBlurX,getBlurX<br></br>
+ setBlurY,getBlurY,setBlurQuality,getBlurQuality) and members(blurX, blurY,<br></br>
+ blurQuality)
+ if not point out which movieclip you wannna, it would make all movieclips<br></br>
+ had those methods
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>target</code></td><td>if not movieclip or not undefined, it would regist <br></br>
+ 		MovieClip.prototype, that means all movieclip would had those <br></br>
+ 		methods.
+ </td></tr></table><h4>Return</h4><p class="extra_info">
+	 </p></div></div><div class="method_details"><a name="setBlurX"></a><h3>setBlurX</h3><code class="method_synopsis">public function <strong class="method_name">setBlurX</strong>(value:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ set movieclicp had a blur X
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>value</code></td><td>a blur X value
+	 </td></tr></table></div></div><div class="method_details alt_row"><a name="getBlurX"></a><h3>getBlurX</h3><code class="method_synopsis">public function <strong class="method_name">getBlurX</strong>():<span class="unresolved_type_name">Number</span></code><div class="method_info"><p>
+ get movieclicp had a blur X
+ 
+ </p><h4>Return</h4><p class="extra_info"> a blur Y value
+	 </p></div></div><div class="method_details"><a name="setBlurY"></a><h3>setBlurY</h3><code class="method_synopsis">public function <strong class="method_name">setBlurY</strong>(value:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ set movieclicp had a blur Y
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>value</code></td><td>a blur Y value
+	 </td></tr></table></div></div><div class="method_details alt_row"><a name="getBlurY"></a><h3>getBlurY</h3><code class="method_synopsis">public function <strong class="method_name">getBlurY</strong>():<span class="unresolved_type_name">Number</span></code><div class="method_info"><p>
+ get movieclicp had a blur Y
+ 
+ </p><h4>Return</h4><p class="extra_info"> a blur Y value
+	 </p></div></div><div class="method_details"><a name="setBlurQuality"></a><h3>setBlurQuality</h3><code class="method_synopsis">public function <strong class="method_name">setBlurQuality</strong>(value:<span class="unresolved_type_name">Number</span>):<span class="void_name">Void</span></code><div class="method_info"><p>
+ set movieclicp had a blur quality
+ 
+ </p><h4>Parameters</h4><table class="arguments extra_info" summary=""><tr><td><code>value</code></td><td>a blur quality
+	 </td></tr></table></div></div><div class="method_details alt_row"><a name="getBlurQuality"></a><h3>getBlurQuality</h3><code class="method_synopsis">public function <strong class="method_name">getBlurQuality</strong>():<span class="unresolved_type_name">Number</span></code><div class="method_info"><p>
+ get movieclicp had a blur quality
+ 
+ </p><h4>Return</h4><p class="extra_info">   value a blur quality
+	 </p></div></div></div></div><ul class="main_nav" id="main_nav"><li><a href="../../../overview-summary.html" title="Overview of whohoo AS2 documents" class="button">Overview</a></li><li><a href="package-summary.html" title="Overview of package com.wangfan.utils" class="button">Package</a></li><li><span class="button nav_current">Class</span></li><li><a href="../../../index-files/index.html" title="Alpabetical index of types and members" class="button">Index</a></li></ul><div class="footer"><a href="http://www.badgers-in-foil.co.uk/projects/as2api/" title="ActionScript 2 API Documentation Generator">as2api</a></div></body></html>

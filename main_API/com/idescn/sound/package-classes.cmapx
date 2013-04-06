@@ -1,0 +1,5 @@
+<map id="class_diagram" name="class_diagram">
+<area shape="rect" href="SoundBar.html" title="com.idescn.sound.SoundBar" alt="" coords="8,150,104,198" />
+<area shape="rect" href="MusicBox.html" title="com.idescn.sound.MusicBox" alt="" coords="7,78,105,126" />
+<area shape="rect" href="ExSound.html" title="com.idescn.sound.ExSound" alt="" coords="11,6,101,54" />
+</map>

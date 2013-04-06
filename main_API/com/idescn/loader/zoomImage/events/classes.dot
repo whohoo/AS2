@@ -1,0 +1,15 @@
+strict digraph class_diagram {
+  rankdir=LR;
+  ZoomImageScroll[
+    label="ZoomImageScroll",
+    URL="ZoomImageScroll.html",
+    tooltip="com.idescn.loader.zoomImage.events.ZoomImageScroll",
+    shape="record"
+  ];
+  FlagListScroll[
+    label="FlagListScroll",
+    URL="FlagListScroll.html",
+    tooltip="com.idescn.loader.zoomImage.events.FlagListScroll",
+    shape="record"
+  ];
+}

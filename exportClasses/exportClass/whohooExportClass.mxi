@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<macromedia-extension
+	 name="whohooExportClass"
+	 version="1.0.0"
+	 type="flash component"
+	 requires-restart="true">
+
+	<author name="Wally.Ho" />
+
+	<products>
+		<product name="Flash" version="8" primary="true" />
+	</products>
+
+	<description>
+	<![CDATA[
+	put all Library.<br>
+Debug.tt:<br>
+<br>
+DynamicRegistration:<br>
+<br>
+Form:<br>
+<br>
+Line:<br>
+<br>
+MCcolorMatrix:<br>
+<br>
+MCmoveInOut:<br>
+<br>
+MCskew:<br>
+<br>
+MoveMap:<br>
+<br>
+Vector3D:<br>
+<br>
+Vector:
+	]]>
+	</description>
+
+	<ui-access>
+	<![CDATA[
+	Welcome to www.wlash.com
+	]]>
+	</ui-access>
+
+	<license-agreement>
+	<![CDATA[
+	
+	]]>
+	</license-agreement>
+
+	<files>
+		<file source="Debug.tt.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="DynamicRegistration.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="Form.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="Line.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="MCcolorMatrix.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="MCmoveInOut.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="MCskew.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="MoveMap.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="Vector3D.swc" destination="$flash/Components/exportClass" platform="win" />
+		<file source="Vector.swc" destination="$flash/Components/exportClass" platform="win" />
+	</files>
+
+</macromedia-extension>
